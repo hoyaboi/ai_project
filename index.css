@@ -1,0 +1,82 @@
+
+header, section, footer {
+  min-width: 1100px;
+}
+section .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  background-size: cover;
+  background-position: center 550px;
+  text-align: center;
+}
+section .content h2 {
+  color: #ffffff;
+  font-size: 50px;
+}
+section .content p {
+  width: 300px;
+  color: rgba(234, 234, 234, 0.6);
+}
+section .content .btn {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  background: none;
+  padding: 5px 70px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+section .content .btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
+}
+
+section .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+section .container .item a {
+  position: relative;
+  display: block;
+  margin: 30px auto 10px auto;
+  top: 0;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px;
+  box-shadow: 0 5px 5px #aaa;
+  transition: 0.2s;
+}
+section .container .item a:hover {
+  top: 5px;
+}
+section .container .item a::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  height: 0;
+  width: 0;
+  transition: 0.2s;
+}
+section .container .item a:hover::after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  margin-top: 70px;
+  padding: 25px;
+  background-color: #ddd;
+}
